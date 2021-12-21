@@ -1,7 +1,6 @@
 package debuging.dota;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     private static int teamNo = 1;
@@ -19,7 +18,7 @@ public class Main {
     }
 
     private static void introduceTeam(DotaTeam dotaTeam) {
-        System.out.printf("Команда №%d: %s, выступает в следующем составе: %n", dotaTeam.name, teamNo);
+        System.out.printf("Команда №%d: %s, выступает в следующем составе: %n", teamNo, dotaTeam.name);
         for (DotaUser user : dotaTeam.users) {
             System.out.printf("%s, ", user.name);
             System.out.println();
@@ -28,7 +27,7 @@ public class Main {
         teamNo += 1;
     }
 
-    private static void defineWinner(List<DotaTeam> teams) {
+    private static void defineWinner(ArrayList<DotaTeam> teams) {
         DotaTeam first = teams.get(0);
         DotaTeam second = teams.get(2);
 

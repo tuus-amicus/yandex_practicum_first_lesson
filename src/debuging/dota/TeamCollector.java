@@ -19,9 +19,8 @@ public class TeamCollector {
         List<DotaUser> users = new ArrayList<>();
 
         do {
-
-            final String userName = input;
-            final int mmr = scanner.nextInt();
+            String userName = input;
+            int mmr = scanner.nextInt();
 
             users.add(new DotaUser(userName, mmr));
 
