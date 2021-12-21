@@ -1,7 +1,5 @@
 package debuging.poliglot;
 
-import javax.sound.midi.Soundbank;
-
 public class Greater {
 
     public static String sayHello(String language) {

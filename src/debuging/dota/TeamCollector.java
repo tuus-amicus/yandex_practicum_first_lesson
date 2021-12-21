@@ -34,6 +34,8 @@ public class TeamCollector {
             avgMmr = Float.valueOf(user.mmr);
         }
 
+        avgMmr /= users.size();
+
         return new DotaTeam(users, teamName, avgMmr);
     }
 
